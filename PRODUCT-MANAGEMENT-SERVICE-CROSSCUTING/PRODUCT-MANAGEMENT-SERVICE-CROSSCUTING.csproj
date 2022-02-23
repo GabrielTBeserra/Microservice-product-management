@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>PRODUCT_MANAGEMENT_SERVICE_CROSSCUTING</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PRODUCT-MANAGEMENT-SERVICE-DOMAIN\PRODUCT-MANAGEMENT-SERVICE-DOMAIN.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DTO\" />
+    <Folder Include="Enum\" />
+  </ItemGroup>
+
+</Project>

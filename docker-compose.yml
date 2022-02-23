@@ -1,0 +1,24 @@
+version: '3.4'
+
+services:
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_USER: microserviceproductmanagement
+      MYSQL_PASSWORD: microserviceproductmanagement
+      MYSQL_DATABASE: microserviceproductmanagement
+      MYSQL_ROOT_PASSWORD: p@ssw0rd
+    ports:
+      - "3306:3307"
+    command:
+      [
+        "mysqld",
+        "--character-set-server=utf8mb4",
+        "--collation-server=utf8mb4_unicode_ci"
+      ]
+
+volumes:
+  db_data: null
