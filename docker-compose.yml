@@ -12,7 +12,7 @@ services:
       MYSQL_DATABASE: microserviceproductmanagement
       MYSQL_ROOT_PASSWORD: p@ssw0rd
     ports:
-      - "3306:3307"
+      - "3307:3306"
     command:
       [
         "mysqld",
