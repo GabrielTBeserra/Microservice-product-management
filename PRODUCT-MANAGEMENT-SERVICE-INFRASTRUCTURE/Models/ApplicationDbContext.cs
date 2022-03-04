@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PRODUCT_MANAGEMENT_SERVICE_DOMAIN.Entities.User;
+using PRODUCT_MANAGEMENT_SERVICE_DOMAIN.Entities.Category;
+using PRODUCT_MANAGEMENT_SERVICE_DOMAIN.Entities.Product;
 
 namespace PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Models
 {
@@ -15,6 +16,10 @@ namespace PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Models
         }
 
         // public DbSet<UserEntity> Users { get; set; }
+        public DbSet<ProductEntity> ProductEntities { get; set; }
+        public DbSet<CategoryEntity> CategoryEntities { get; set; }
+        public DbSet<CategoryProductEntity> CategoryProductEntity { get; set; }
+        public DbSet<ProductHistoryEntity> ProductHistoryEntity { get; set; }
 
     }
 }

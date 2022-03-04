@@ -25,7 +25,7 @@ namespace PRODUCT_MANAGEMENT_SERVICE_SERVICE.ApplicationService.Config
 
             if (user == null)
             {
-                throw new DomainException("User not found");
+                throw new NotFoundException("User not found");
             }
 
             return user;

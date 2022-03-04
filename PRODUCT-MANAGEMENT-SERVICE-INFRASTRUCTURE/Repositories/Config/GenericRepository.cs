@@ -1,16 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Models;
-using PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Repositories.Config.Interfaces;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Repositories.Config
 {
-    public abstract class GenericRepository<T> : IGenericRepository<T> where T : class
+    public abstract class IGenericRepository<T> : Interfaces.IGenericRepository<T> where T : class
     {
         private readonly ApplicationDbContext _applicationDbContext;
 
-        public GenericRepository(ApplicationDbContext applicationDbContext)
+        public IGenericRepository(ApplicationDbContext applicationDbContext)
         {
             _applicationDbContext = applicationDbContext;
         }

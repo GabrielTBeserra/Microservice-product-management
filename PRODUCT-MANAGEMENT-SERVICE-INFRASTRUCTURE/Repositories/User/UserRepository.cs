@@ -5,7 +5,7 @@ using PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Repositories.User.Interfaces;
 
 namespace PRODUCT_MANAGEMENT_SERVICE_INFRASTRUCTURE.Repositories.User
 {
-    public class UserRepository : GenericRepository<UserEntity>, IUserRepository
+    public class UserRepository : IGenericRepository<UserEntity>, IUserRepository
     {
         public UserRepository(ApplicationDbContext applicationDbContext) : base(applicationDbContext)
         {
